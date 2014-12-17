@@ -1,4 +1,54 @@
+<!doctype html>
 <html>
-  <body>
-  </body>
+<head>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" /> 
+    <script src="tab.js" charset="utf-8"></script>
+</head>
+<body>
+    <!--Tableau-->
+<center> <table id="tableau">
+        <caption>Import fichier vers M3</caption>
+        <tr>
+            <th>Fichier</th><th>Type Import</th><th>Modele</th><th>Date/heure Upload</th><th>Env M3</th><th>Date/heure exec</th><th>Statut</th><th>Nb lignes fichier</th><th>Nb lignes integrees</th><th>Nb lignes rejetees</th>
+        </tr>
+                <tr> <!--Fichier-->
+            <td>Prdxxx-20140911.xls</td><td>MDI</td><td>Intart_v3</td><td>2014/09/11 - 8:15:00</td><td>VPRD</td><td>2014/09/09 - 8:15:00</td><td>En att</td><td>100</td><td>0</td><td>0</td>
+        </tr>
+                <tr> <!--Type Import-->
+            <td>Prdxxx-20140910.xls</td><td>MEC</td><td>Intart_v2</td><td>2014/09/10 - 8:20:00</td><td>VPRD</td><td>2014/09/10 - 8:25:00</td><td>Termine avec err</td><td>90</td><td>78</td><td>12</td>
+        </tr>
+                <tr> <!--Modele-->
+            <td>Prdxxx-20140909.xls</td><td>MWS</td><td>Intart_v1</td><td>2014/09/09 - 8:10:00</td> <td>VPRD</td><td>2014/09/10 - 8:25:00</td><td>Termine</td><td>53</td><td>53</td><td>0</td>
+        </tr>
+       </table>
+</center>
+
+<!--Menu avec boutons-->
+<div id="menu">
+    <div id="demande"><button type="button" style="background:white; cursor:hand; border:solid 1px black;"
+        style="background:white; cursor:pointer; border:solid 1px black;"
+        onclick="self.location.href='demande.html'">
+  <img src="img/demande.jpg" alt="home" width="85" height="85" />
+</button> 
+    </br><a>Cree une demande</a>
+</div>
+    <div id="erreur"><button type="button" style="background:white; cursor:hand; border:solid 1px black;"
+        style="background:white; cursor:pointer; border:solid 1px black;"
+        onclick="self.location.href='demande.html'">
+  <img src="img/erreur.png" alt="home" width="85" height="85" />
+</button> 
+    </br><a>Consulter les erreurs</a>
+    </div>
+    <div id="configure"><button type="button" style="background:white; cursor:hand; border:solid 1px black;"
+        style="background:white; cursor:pointer; border:solid 1px black;"
+        onclick="self.location.href='demande.html'">
+  <img src="img/configure.png" alt="home" width="85" height="85" />
+</button> 
+    </br><a>Configurer</a>
+</div>
+   </div> 
+
+
+
+</body>
 </html>

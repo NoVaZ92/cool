@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="tab.js" charset="utf-8"></script>
+        <title>Récupération de données</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+</br>
+        <form action="index.html" name="ligne" target="_blank" method="GET">
+            <table id="tableau">
+                <tr>
+                    <td>
+<label for="type">Type d'import : </label>
+       <select name="type" id="type">
+           <option value="MDI">MDI</option>
+           <option value="MEC">MEC</option>
+           <option value="MWS">MWS</option>
+       </select>
+                    </td>
+<td>
+<label for="modele">Modele : </label>
+<select name="modele" id="modele">
+           <option value="v1">Intart_V1</option>
+           <option value="v2">Intart_V2</option>
+           <option value="v3">Intart_V3</option>
+       </select>
+</td>
+<td>
+    <label for="env">Environnement : </label>
+<select name="env" id="env">
+           <option value="PRD">PRD</option>
+           <option value="TST">TST</option>
+           <option value="DEV">DEV</option>
+       </select>
+</td>
+    </tr>
+        </table>         
+            <input type="button" value="Ajouter" onclick="addRow(document.getElementById('tableau'), document.getElementById('env').value, document.getElementById('modele').value, document.getElementById('type').value), document.forms['ligne'].submit();" />
+        </form>
+    </body>
+</html>

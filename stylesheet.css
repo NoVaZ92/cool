@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 oct. 2014, 10:28:14
+    Author     : MATEUS
+*/
+
+
+table
+{
+    border-collapse: collapse;
+    padding: 30px 8px 0px 8px;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+    padding: 12px;
+}
+
+#demande{
+    float:left;
+    text-align: center;
+    padding: 30px 8px 0px 8px;
+
+}
+
+#erreur{
+    float:left;
+    text-align: center;
+    padding: 30px 8px 0px 8px;
+
+}
+
+#configure{
+    float:right;
+    text-align: center;
+    padding: 30px 8px 0px 8px;
+
+}
